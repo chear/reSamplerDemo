@@ -19,7 +19,7 @@ extern "C"
 
 #define DLL __declspec(dllexport)
 
-typedef void (__stdcall *ProgressCallback)(int);
+typedef void (__cdecl *ProgressCallback)(int);
 
 /** The resampler state structure. */
 typedef struct nr_s {
